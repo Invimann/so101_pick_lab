@@ -36,10 +36,3 @@ the arm. **Success** = both jaws touch the cube *and* the cube centre is >= 5 cm
 python train.py --run-name my_run --timesteps 200000 --randomization 0
 tensorboard --logdir runs            # Colab: %load_ext tensorboard ; %tensorboard --logdir runs
 ```
-
-## Report questions
-* What did the policy do with the starter reward, and why?
-* Which reward terms mattered? Show one failure you saw (e.g. pushing the cube, hovering) and how you fixed it.
-* Hyperparameters: which values did you change from the baseline, why, and what happened (include a plot)?
-* Why did you choose your algorithm (SAC or PPO)?
-* Final success rate over 100 episodes with random cube positions.
