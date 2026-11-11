@@ -20,7 +20,7 @@ reinforcement learning. No ROS 2 needed: just Python, MuJoCo, Gymnasium and SB3.
 ## The task in one paragraph
 Each step the policy outputs 5 numbers in [-1, 1]: change of shoulder pan, shoulder lift, elbow,
 wrist flex, and gripper (20 Hz, 150 steps per episode). The cube appears on the floor in front of
-the arm. **Success** = both jaws touch the cube *and* the cube centre is >= 5 cm above the floor.
+the arm. **Success** = both jaws touch the cube *and* the cube centre is >= 15 cm above the floor.
 
 ## Workflow
 1. `python scripts/check_env.py` and `python tests/test_env.py`: everything passes.
@@ -36,10 +36,3 @@ the arm. **Success** = both jaws touch the cube *and* the cube centre is >= 5 cm
 python train.py --run-name my_run --timesteps 200000 --randomization 0
 tensorboard --logdir runs            # Colab: %load_ext tensorboard ; %tensorboard --logdir runs
 ```
-
-## Report questions
-* What did the policy do with the starter reward, and why?
-* Which reward terms mattered? Show one failure you saw (e.g. pushing the cube, hovering) and how you fixed it.
-* Hyperparameters: which values did you change from the baseline, why, and what happened (include a plot)?
-* Why did you choose your algorithm (SAC or PPO)?
-* Final success rate over 100 episodes with random cube positions.
