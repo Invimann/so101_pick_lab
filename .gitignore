@@ -1,0 +1,8 @@
+staff/
+runs/
+__pycache__/
+*.pyc
+*.mp4
+check_env_frame.png
+.pytest_cache/
+venv/*

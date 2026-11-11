@@ -1,0 +1,10 @@
+# Install PyTorch first (see installation.md; CPU build is fine), then:
+mujoco>=3.2
+gymnasium>=1.0
+stable-baselines3[extra]>=2.4
+tensorboard
+imageio
+imageio-ffmpeg
+numpy
+matplotlib
+pytest
