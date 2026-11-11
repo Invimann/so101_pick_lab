@@ -71,7 +71,7 @@ macOS does not need `MUJOCO_GL`. For the interactive viewer on macOS, run script
 ### 5. Get the lab code
 
 ```bash
-git clone <LAB_REPO_URL> so101_pick_lab      # URL provided by your instructor
+git clone https://github.com/Invimann/so101_pick_lab/
 cd so101_pick_lab
 ```
 
@@ -100,7 +100,7 @@ os.environ["MUJOCO_GL"] = "egl"      # fall back to "osmesa" if EGL errors
 **Cell 3: get the lab code**
 
 ```python
-!git clone <LAB_REPO_URL> so101_pick_lab
+!git clone https://github.com/Invimann/so101_pick_lab/
 %cd so101_pick_lab
 ```
 
@@ -254,4 +254,4 @@ A window should open. This does not work on Colab or on remote/headless machines
 | Torch download very large or slow | Use the CPU index URL shown in step A2. |
 | Colab loses everything on restart | Save checkpoints to Google Drive (see the Colab tips). |
 
-Still stuck? Post the **full error message** plus the output of Check 1 on the course forum.
+Still stuck? go to our Slack channel :-).
